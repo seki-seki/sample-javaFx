@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+    fx:controller="javafxapplication1.src.main.java.FxmlWindowControl"
+    prefWidth="300.0" prefHeight="200.0">
+
+    <!-- メニューバー -->
+    <top>
+    <MenuBar>
+        <menus>
+            <Menu text="ファイル">
+                <MenuItem text="終了" onAction="#close"/>
+            </Menu>
+        </menus>
+    </MenuBar>
+    </top>
+    <!-- ボディ部 -->
+    <center>
+    <AnchorPane prefWidth="300.0" prefHeight="100.0">
+        <children>
+           <Label text="↓を押下するとcsvを選択できます"
+                   AnchorPane.topAnchor="12.0"
+                   AnchorPane.leftAnchor="8.0" />
+           <Button onAction="#csvChoose"
+                   text="csv選択" prefWidth="45.0"
+                   AnchorPane.topAnchor="85.0"
+                   AnchorPane.leftAnchor="10.0" />
+        </children>
+    </AnchorPane>
+    </center>
+</BorderPane>
